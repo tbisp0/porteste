@@ -1,0 +1,128 @@
+/**
+ * 🎯 FLUID GRADIENTS
+ * 
+ * Sistema de gradientes fluidos para backgrounds
+ */
+
+/* ===== GRADIENTES BASE ===== */
+.gradient-bg-primary {
+  background: linear-gradient(135deg, 
+    var(--color-primary) 0%, 
+    var(--color-accent) 50%, 
+    var(--color-secondary) 100%
+  );
+}
+
+.gradient-bg-secondary {
+  background: linear-gradient(135deg, 
+    var(--color-secondary) 0%, 
+    var(--color-primary) 50%, 
+    var(--color-accent) 100%
+  );
+}
+
+/* ===== GRADIENTES ANIMADOS ===== */
+.gradient-animated {
+  background: linear-gradient(
+    -45deg,
+    var(--color-primary),
+    var(--color-accent),
+    var(--color-secondary),
+    var(--color-primary)
+  );
+  background-size: 400% 400%;
+  animation: gradientShift 15s ease infinite;
+}
+
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* ===== GRADIENTES SUTIS ===== */
+.gradient-subtle {
+  background: linear-gradient(135deg, 
+    rgba(59, 130, 246, 0.1) 0%, 
+    rgba(139, 92, 246, 0.1) 50%, 
+    rgba(16, 185, 129, 0.1) 100%
+  );
+}
+
+/* ===== GRADIENTES DE TEXTO ===== */
+.gradient-text-primary {
+  background: linear-gradient(135deg, var(--color-primary), var(--color-accent));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+.gradient-text-secondary {
+  background: linear-gradient(135deg, var(--color-secondary), var(--color-primary));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+/* ===== OVERLAYS ===== */
+.gradient-overlay {
+  position: relative;
+}
+
+.gradient-overlay::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, 
+    rgba(59, 130, 246, 0.8) 0%, 
+    rgba(139, 92, 246, 0.8) 100%
+  );
+  z-index: 1;
+}
+
+.gradient-overlay > * {
+  position: relative;
+  z-index: 2;
+}
+
+/* ===== MODO ESCURO ===== */
+[data-theme="dark"] .gradient-subtle {
+  background: linear-gradient(135deg, 
+    rgba(96, 165, 250, 0.1) 0%, 
+    rgba(167, 139, 250, 0.1) 50%, 
+    rgba(52, 211, 153, 0.1) 100%
+  );
+}
+
+[data-theme="dark"] .gradient-overlay::before {
+  background: linear-gradient(135deg, 
+    rgba(96, 165, 250, 0.6) 0%, 
+    rgba(167, 139, 250, 0.6) 100%
+  );
+}
+
+/* ===== PERFORMANCE ===== */
+.gradient-animated,
+.gradient-bg-primary,
+.gradient-bg-secondary {
+  will-change: background-position;
+  transform: translateZ(0);
+}
+
+/* ===== RESPONSIVIDADE ===== */
+@media (max-width: 768px) {
+  .gradient-animated {
+    animation-duration: 20s;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .gradient-animated {
+    animation: none;
+  }
+}
