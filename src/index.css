@@ -1,0 +1,40 @@
+/* ===== CSS JÁ INCLUÍDO NO SISTEMA MODULAR ===== */
+/* Todos os estilos agora estão em src/styles/index.css */
+
+/* ===== TAILWIND CSS ===== */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ===== ESTILOS BASE ===== */
+body {
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-family);
+  font-size: var(--font-size-base);
+  transition: background var(--transition), color var(--transition);
+}
+
+.section-title {
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-bold);
+  margin-bottom: var(--space-md);
+  position: relative;
+  color: var(--color-primary);
+}
+
+.section-title::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  width: 4rem;
+  height: 0.25rem;
+  background: var(--color-primary-light);
+}
+
+/* ===== NAVEGAÇÃO ===== */
+nav a,
+header a {
+  text-decoration: none !important;
+}

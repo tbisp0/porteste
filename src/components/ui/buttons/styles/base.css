@@ -1,0 +1,251 @@
+/* ===== BASE BUTTON STYLES ===== */
+/* Estilos para Button.tsx, CTAButton.tsx, EnhancedButton.tsx */
+
+/* ===== BUTTON BASE ===== */
+.button-base {
+  /* Dimensions */
+  min-height: var(--button-height-md);
+  padding: var(--button-padding-md);
+  gap: 8px;
+  
+  /* Typography */
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.4;
+  
+  /* Appearance */
+  border-radius: var(--button-border-radius);
+  border: 1px solid var(--color-border);
+  background: var(--color-surface);
+  color: var(--color-text);
+  
+  /* Effects */
+  box-shadow: var(--button-shadow);
+  transition: var(--button-transition);
+}
+
+.button-base:hover {
+  background: var(--color-accent);
+  border-color: var(--color-primary);
+  transform: translateY(-1px);
+  box-shadow: var(--button-shadow-hover);
+}
+
+.button-base:active {
+  transform: translateY(0);
+  box-shadow: var(--button-shadow-active);
+}
+
+/* ===== BUTTON VARIANTS ===== */
+.button-base.variant-primary {
+  background: var(--color-primary);
+  color: white;
+  border-color: var(--color-primary);
+}
+
+.button-base.variant-primary:hover {
+  background: var(--color-primary-dark);
+  border-color: var(--color-primary-dark);
+}
+
+.button-base.variant-secondary {
+  background: var(--color-surface);
+  color: var(--color-primary);
+  border-color: var(--color-primary);
+}
+
+.button-base.variant-secondary:hover {
+  background: var(--color-primary);
+  color: white;
+}
+
+.button-base.variant-ghost {
+  background: transparent;
+  color: var(--color-muted);
+  border-color: transparent;
+  box-shadow: none;
+}
+
+.button-base.variant-ghost:hover {
+  background: var(--color-surface);
+  color: var(--color-primary);
+  border-color: var(--color-border);
+}
+
+.button-base.variant-outline {
+  background: transparent;
+  color: var(--color-primary);
+  border-color: var(--color-primary);
+}
+
+.button-base.variant-outline:hover {
+  background: var(--color-primary);
+  color: white;
+}
+
+/* ===== BUTTON SIZES ===== */
+.button-base.size-sm {
+  min-height: var(--button-height-sm);
+  padding: var(--button-padding-sm);
+  font-size: 12px;
+  border-radius: var(--button-border-radius-sm);
+}
+
+.button-base.size-lg {
+  min-height: var(--button-height-lg);
+  padding: var(--button-padding-lg);
+  font-size: 16px;
+  border-radius: var(--button-border-radius-lg);
+}
+
+/* ===== CTA BUTTON ===== */
+.button-cta {
+  /* Base properties */
+  min-height: var(--button-height-lg);
+  padding: var(--button-padding-lg);
+  gap: 12px;
+  
+  /* Typography */
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.4;
+  
+  /* Appearance */
+  border-radius: var(--button-border-radius-lg);
+  border: 2px solid var(--color-primary);
+  background: var(--color-primary);
+  color: white;
+  
+  /* Effects */
+  box-shadow: var(--button-shadow-hover);
+  transition: var(--button-transition);
+}
+
+.button-cta:hover {
+  background: var(--color-primary-dark);
+  border-color: var(--color-primary-dark);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 16px rgba(var(--primary), 0.3);
+}
+
+.button-cta:active {
+  transform: translateY(0);
+  box-shadow: var(--button-shadow);
+}
+
+/* CTA Variants */
+.button-cta.variant-hero {
+  /* Special WhatsApp CTA */
+  background: linear-gradient(135deg, #25D366 0%, #1ebe5d 50%, #128C7E 100%);
+  border-color: #25D366;
+  box-shadow: 
+    var(--button-shadow-hover),
+    0 0 20px rgba(37, 211, 102, 0.3);
+}
+
+.button-cta.variant-hero:hover {
+  transform: translateY(-3px) scale(1.02);
+  box-shadow: 
+    0 12px 24px rgba(37, 211, 102, 0.4),
+    0 0 30px rgba(37, 211, 102, 0.5);
+}
+
+.button-cta.variant-secondary {
+  background: var(--color-surface);
+  color: var(--color-primary);
+  border-color: var(--color-primary);
+}
+
+.button-cta.variant-secondary:hover {
+  background: var(--color-primary);
+  color: white;
+}
+
+/* ===== ENHANCED BUTTON ===== */
+.button-enhanced {
+  /* Base properties */
+  min-height: var(--button-height-md);
+  padding: var(--button-padding-md);
+  gap: 8px;
+  
+  /* Typography */
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.4;
+  
+  /* Appearance */
+  border-radius: var(--button-border-radius);
+  border: 1px solid var(--color-border);
+  background: var(--color-surface);
+  color: var(--color-text);
+  
+  /* Effects */
+  box-shadow: var(--button-shadow);
+  transition: var(--button-transition);
+}
+
+.button-enhanced:hover {
+  background: var(--color-primary);
+  color: white;
+  border-color: var(--color-primary);
+  transform: translateY(-1px) scale(1.02);
+  box-shadow: var(--button-shadow-hover);
+}
+
+.button-enhanced:active {
+  transform: translateY(0) scale(1);
+  box-shadow: var(--button-shadow-active);
+}
+
+/* Enhanced Button Variants */
+.button-enhanced.variant-primary {
+  background: var(--color-primary);
+  color: white;
+  border-color: var(--color-primary);
+}
+
+.button-enhanced.variant-primary:hover {
+  background: var(--color-primary-dark);
+  border-color: var(--color-primary-dark);
+}
+
+.button-enhanced.variant-ghost {
+  background: transparent;
+  border-color: transparent;
+  box-shadow: none;
+}
+
+.button-enhanced.variant-ghost:hover {
+  background: var(--color-accent);
+  border-color: var(--color-border);
+}
+
+/* ===== PROJECT CARD BUTTON ===== */
+.button-project-card {
+  /* Extends enhanced button */
+  min-height: var(--button-height-md);
+  padding: var(--button-padding-md);
+  gap: 8px;
+  
+  /* Typography */
+  font-size: 14px;
+  font-weight: 500;
+  
+  /* Appearance */
+  border-radius: var(--button-border-radius);
+  border: 1px solid var(--color-border);
+  background: var(--color-surface);
+  color: var(--color-text);
+  
+  /* Effects */
+  box-shadow: var(--button-shadow);
+  transition: var(--button-transition);
+}
+
+.button-project-card:hover {
+  background: var(--color-primary);
+  color: white;
+  border-color: var(--color-primary);
+  transform: translateY(-1px);
+  box-shadow: var(--button-shadow-hover);
+}

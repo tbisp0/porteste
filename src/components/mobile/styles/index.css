@@ -1,0 +1,299 @@
+/**
+ * 🎯 CSS MOBILE UNIFICADO
+ * 
+ * Sistema CSS modular para componentes mobile
+ * Otimizado para performance e acessibilidade
+ */
+
+/* ===== IMPORTAÇÕES MODULARES ===== */
+@import './layout.css';
+@import './navigation.css';
+@import './gestures.css';
+@import './components.css';
+@import './animations.css';
+@import './responsive.css';
+
+/* ===== VARIÁVEIS MOBILE ===== */
+:root {
+  /* ===== BREAKPOINTS MOBILE ===== */
+  --mobile-xs: 479px;
+  --mobile-sm: 767px;
+  --mobile-md: 1023px;
+  --mobile-lg: 1279px;
+  --mobile-xl: 1920px;
+  
+  /* ===== SAFE AREAS ===== */
+  --safe-area-inset-top: env(safe-area-inset-top, 0px);
+  --safe-area-inset-right: env(safe-area-inset-right, 0px);
+  --safe-area-inset-bottom: env(safe-area-inset-bottom, 0px);
+  --safe-area-inset-left: env(safe-area-inset-left, 0px);
+  
+  /* ===== TOUCH TARGETS ===== */
+  --touch-target-min: 44px;
+  --touch-target-comfortable: 48px;
+  --touch-target-large: 56px;
+  
+  /* ===== MOBILE SPACING ===== */
+  --mobile-padding-xs: 0.5rem;   /* 8px */
+  --mobile-padding-sm: 1rem;     /* 16px */
+  --mobile-padding-md: 1.5rem;   /* 24px */
+  --mobile-padding-lg: 2rem;     /* 32px */
+  
+  /* ===== MOBILE TYPOGRAPHY ===== */
+  --mobile-text-xs: 0.75rem;     /* 12px */
+  --mobile-text-sm: 0.875rem;    /* 14px */
+  --mobile-text-base: 1rem;      /* 16px */
+  --mobile-text-lg: 1.125rem;    /* 18px */
+  --mobile-text-xl: 1.25rem;     /* 20px */
+  
+  /* ===== MOBILE Z-INDEX ===== */
+  --z-mobile-backdrop: 40;
+  --z-mobile-navigation: 50;
+  --z-mobile-menu: 60;
+  --z-mobile-modal: 70;
+  --z-mobile-toast: 80;
+  
+  /* ===== MOBILE ANIMATIONS ===== */
+  --mobile-transition-fast: 0.15s ease-out;
+  --mobile-transition: 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  --mobile-transition-slow: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  
+  /* ===== MOBILE GESTURES ===== */
+  --swipe-threshold: 50px;
+  --tap-max-distance: 10px;
+  --long-press-duration: 500ms;
+}
+
+/* ===== CLASSES BASE MOBILE ===== */
+
+/* Safe Area Support */
+.safe-area-inset {
+  padding-top: var(--safe-area-inset-top);
+  padding-right: var(--safe-area-inset-right);
+  padding-bottom: var(--safe-area-inset-bottom);
+  padding-left: var(--safe-area-inset-left);
+}
+
+.safe-area-inset-top {
+  padding-top: var(--safe-area-inset-top);
+}
+
+.safe-area-inset-bottom {
+  padding-bottom: var(--safe-area-inset-bottom);
+}
+
+/* Touch Targets */
+.touch-target {
+  min-width: var(--touch-target-min);
+  min-height: var(--touch-target-min);
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.touch-target-comfortable {
+  min-width: var(--touch-target-comfortable);
+  min-height: var(--touch-target-comfortable);
+}
+
+.touch-target-large {
+  min-width: var(--touch-target-large);
+  min-height: var(--touch-target-large);
+}
+
+/* Mobile Layout */
+.mobile-layout {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  min-height: 100dvh; /* Dynamic viewport height */
+  overflow-x: hidden;
+}
+
+.mobile-container {
+  width: 100%;
+  max-width: 100%;
+  padding-left: var(--mobile-padding-sm);
+  padding-right: var(--mobile-padding-sm);
+  margin: 0 auto;
+}
+
+/* Mobile Typography */
+.mobile-text {
+  font-size: var(--mobile-text-base);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Mobile Interactions */
+.mobile-interactive {
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
+  user-select: none;
+  cursor: pointer;
+}
+
+.mobile-interactive:active {
+  transform: scale(0.98);
+}
+
+/* Mobile Scrolling */
+.mobile-scroll {
+  -webkit-overflow-scrolling: touch;
+  overscroll-behavior: contain;
+  scroll-behavior: smooth;
+}
+
+/* Mobile Performance */
+.mobile-optimized {
+  will-change: transform, opacity;
+  transform: translateZ(0);
+  backface-visibility: hidden;
+}
+
+/* ===== RESPONSIVE UTILITIES ===== */
+
+/* Mobile Only */
+@media (max-width: 767px) {
+  .mobile-only {
+    display: block !important;
+  }
+  
+  .mobile-hidden {
+    display: none !important;
+  }
+  
+  .mobile-container {
+    padding-left: var(--mobile-padding-sm);
+    padding-right: var(--mobile-padding-sm);
+  }
+}
+
+/* Tablet Only */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .tablet-only {
+    display: block !important;
+  }
+  
+  .tablet-hidden {
+    display: none !important;
+  }
+}
+
+/* Desktop Only */
+@media (min-width: 1024px) {
+  .desktop-only {
+    display: block !important;
+  }
+  
+  .desktop-hidden {
+    display: none !important;
+  }
+  
+  .mobile-only,
+  .tablet-only {
+    display: none !important;
+  }
+}
+
+/* ===== ORIENTAÇÃO ===== */
+@media (orientation: portrait) {
+  .portrait-only {
+    display: block !important;
+  }
+  
+  .landscape-hidden {
+    display: none !important;
+  }
+}
+
+@media (orientation: landscape) {
+  .landscape-only {
+    display: block !important;
+  }
+  
+  .portrait-hidden {
+    display: none !important;
+  }
+}
+
+/* ===== ACESSIBILIDADE MOBILE ===== */
+
+/* Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+  .mobile-optimized,
+  .mobile-interactive {
+    transition: none !important;
+    animation: none !important;
+    transform: none !important;
+  }
+}
+
+/* High Contrast */
+@media (prefers-contrast: high) {
+  .mobile-interactive {
+    border: 2px solid var(--color-text) !important;
+  }
+  
+  .touch-target {
+    outline: 1px solid var(--color-text);
+  }
+}
+
+/* Dark Mode Mobile */
+@media (prefers-color-scheme: dark) {
+  .mobile-layout {
+    color-scheme: dark;
+  }
+}
+
+/* ===== PERFORMANCE MOBILE ===== */
+
+/* GPU Acceleration */
+.mobile-gpu-accelerated {
+  transform: translateZ(0);
+  will-change: transform;
+}
+
+/* Contain Layout */
+.mobile-contained {
+  contain: layout style paint;
+}
+
+/* Optimize Scrolling */
+.mobile-scroll-optimized {
+  -webkit-overflow-scrolling: touch;
+  overscroll-behavior: contain;
+  scroll-snap-type: y mandatory;
+}
+
+/* ===== DEBUGGING (DEVELOPMENT ONLY) ===== */
+@media (max-width: 767px) {
+  .mobile-debug {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(255, 0, 0, 0.8);
+    color: white;
+    padding: 4px 8px;
+    font-size: 12px;
+    z-index: 9999;
+    pointer-events: none;
+  }
+  
+  .mobile-debug::before {
+    content: 'MOBILE';
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .mobile-debug::before {
+    content: 'TABLET';
+  }
+}
+
+@media (min-width: 1024px) {
+  .mobile-debug::before {
+    content: 'DESKTOP';
+  }
+}

@@ -1,0 +1,19 @@
+/**
+ * 🎯 SISTEMA DE TEMAS
+ * 
+ * Temas e variações
+ * Suporte completo ao modo escuro
+ */
+
+/* ===== THEME UTILITIES ===== */
+.theme-light {
+  color-scheme: light;
+}
+
+.theme-dark {
+  color-scheme: dark;
+}
+
+.theme-auto {
+  color-scheme: light dark;
+}

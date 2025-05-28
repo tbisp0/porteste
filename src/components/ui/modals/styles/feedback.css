@@ -1,0 +1,282 @@
+/**
+ * 🎯 ESTILOS ESPECÍFICOS PARA FEEDBACK MODAL
+ * 
+ * Estilos customizados para o modal de feedback
+ * Inclui validação, estados e animações específicas
+ */
+
+/* ===== FEEDBACK MODAL ESPECÍFICO ===== */
+.feedback-modal {
+  /* Cores específicas do feedback */
+  --feedback-primary: #3b82f6;
+  --feedback-primary-hover: #2563eb;
+  --feedback-success: #10b981;
+  --feedback-error: #ef4444;
+  --feedback-warning: #f59e0b;
+}
+
+/* ===== FEEDBACK TYPES ===== */
+.feedback-type-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1rem;
+  border-radius: 0.5rem;
+  border: 2px solid transparent;
+  background: transparent;
+  color: var(--color-text-muted);
+  transition: var(--modal-transition-fast);
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.feedback-type-button:hover {
+  background: var(--color-surface-hover);
+  color: var(--color-text);
+  border-color: var(--feedback-primary);
+}
+
+.feedback-type-button.active {
+  background: var(--feedback-primary);
+  color: white;
+  border-color: var(--feedback-primary);
+}
+
+.feedback-type-button:focus {
+  outline: 2px solid var(--feedback-primary);
+  outline-offset: 2px;
+}
+
+/* ===== FORM VALIDATION ===== */
+.feedback-textarea {
+  position: relative;
+}
+
+.feedback-textarea textarea {
+  width: 100%;
+  min-height: 90px;
+  padding: 0.75rem;
+  padding-right: 2.5rem;
+  border: 2px solid var(--color-border);
+  border-radius: 0.5rem;
+  background: var(--color-surface);
+  color: var(--color-text);
+  font-size: 1rem;
+  line-height: 1.5;
+  resize: vertical;
+  transition: var(--modal-transition-fast);
+}
+
+.feedback-textarea textarea:focus {
+  outline: none;
+  border-color: var(--feedback-primary);
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+.feedback-textarea textarea::placeholder {
+  color: var(--color-text-muted);
+}
+
+/* Validation states */
+.feedback-textarea.error textarea {
+  border-color: var(--feedback-error);
+}
+
+.feedback-textarea.error textarea:focus {
+  border-color: var(--feedback-error);
+  box-shadow: 0 0 0 3px rgba(239, 68, 68, 0.1);
+}
+
+.feedback-textarea.success textarea {
+  border-color: var(--feedback-success);
+}
+
+.feedback-textarea.success textarea:focus {
+  border-color: var(--feedback-success);
+  box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.1);
+}
+
+/* ===== VALIDATION ICONS ===== */
+.feedback-validation-icon {
+  position: absolute;
+  top: 0.75rem;
+  right: 0.75rem;
+  width: 1.25rem;
+  height: 1.25rem;
+  pointer-events: none;
+}
+
+.feedback-validation-icon.error {
+  color: var(--feedback-error);
+}
+
+.feedback-validation-icon.success {
+  color: var(--feedback-success);
+}
+
+/* ===== EMAIL SECTION ===== */
+.feedback-email-section {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.feedback-email-checkbox {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.feedback-email-checkbox input[type="checkbox"] {
+  width: 1rem;
+  height: 1rem;
+  accent-color: var(--feedback-primary);
+}
+
+.feedback-email-checkbox label {
+  font-size: 0.875rem;
+  color: var(--color-text);
+  cursor: pointer;
+  user-select: none;
+}
+
+.feedback-email-input {
+  position: relative;
+}
+
+.feedback-email-input input {
+  width: 100%;
+  padding: 0.5rem;
+  padding-right: 2.5rem;
+  border: 2px solid var(--color-border);
+  border-radius: 0.5rem;
+  background: var(--color-surface);
+  color: var(--color-text);
+  font-size: 1rem;
+  transition: var(--modal-transition-fast);
+}
+
+.feedback-email-input input:focus {
+  outline: none;
+  border-color: var(--feedback-primary);
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+.feedback-email-input.error input {
+  border-color: var(--feedback-error);
+}
+
+.feedback-email-input.success input {
+  border-color: var(--feedback-success);
+}
+
+/* ===== STATUS MESSAGES ===== */
+.feedback-status-message {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  margin-top: 1rem;
+}
+
+.feedback-status-message.success {
+  background: rgba(16, 185, 129, 0.1);
+  border: 1px solid rgba(16, 185, 129, 0.2);
+  color: var(--feedback-success);
+}
+
+.feedback-status-message.error {
+  background: rgba(239, 68, 68, 0.1);
+  border: 1px solid rgba(239, 68, 68, 0.2);
+  color: var(--feedback-error);
+}
+
+.feedback-status-message svg {
+  width: 1rem;
+  height: 1rem;
+  flex-shrink: 0;
+}
+
+/* ===== PRIVACY LINK ===== */
+.feedback-privacy-link {
+  font-size: 0.75rem;
+  color: var(--feedback-primary);
+  text-decoration: underline;
+  transition: var(--modal-transition-fast);
+}
+
+.feedback-privacy-link:hover {
+  color: var(--feedback-primary-hover);
+}
+
+/* ===== MODO ESCURO ===== */
+.dark .feedback-type-button {
+  color: var(--color-text-muted-dark, #9ca3af);
+}
+
+.dark .feedback-type-button:hover {
+  background: var(--color-surface-hover-dark, #374151);
+  color: var(--color-text-dark, #f9fafb);
+}
+
+.dark .feedback-textarea textarea {
+  background: var(--color-surface-dark, #374151);
+  border-color: var(--color-border-dark, #4b5563);
+  color: var(--color-text-dark, #f9fafb);
+}
+
+.dark .feedback-textarea textarea::placeholder {
+  color: var(--color-text-muted-dark, #9ca3af);
+}
+
+.dark .feedback-email-checkbox label {
+  color: var(--color-text-dark, #f9fafb);
+}
+
+.dark .feedback-email-input input {
+  background: var(--color-surface-dark, #374151);
+  border-color: var(--color-border-dark, #4b5563);
+  color: var(--color-text-dark, #f9fafb);
+}
+
+.dark .feedback-status-message.success {
+  background: rgba(16, 185, 129, 0.1);
+  border-color: rgba(16, 185, 129, 0.3);
+  color: #34d399;
+}
+
+.dark .feedback-status-message.error {
+  background: rgba(239, 68, 68, 0.1);
+  border-color: rgba(239, 68, 68, 0.3);
+  color: #f87171;
+}
+
+.dark .feedback-privacy-link {
+  color: #60a5fa;
+}
+
+.dark .feedback-privacy-link:hover {
+  color: #3b82f6;
+}
+
+/* ===== RESPONSIVIDADE ===== */
+@media (max-width: 640px) {
+  .feedback-type-button {
+    padding: 1rem;
+    font-size: 0.875rem;
+  }
+  
+  .feedback-textarea textarea {
+    min-height: 80px;
+    font-size: 0.875rem;
+  }
+  
+  .feedback-status-message {
+    padding: 0.5rem;
+    font-size: 0.75rem;
+  }
+}

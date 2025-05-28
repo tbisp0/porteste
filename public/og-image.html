@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OG Image Generator</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            width: 1200px;
+            height: 630px;
+            background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 100%);
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .background-pattern {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: 
+                radial-gradient(circle at 20% 20%, rgba(255,255,255,0.1) 0%, transparent 50%),
+                radial-gradient(circle at 80% 80%, rgba(255,255,255,0.1) 0%, transparent 50%);
+        }
+        
+        .container {
+            text-align: center;
+            z-index: 1;
+            max-width: 900px;
+            padding: 40px;
+        }
+        
+        .name {
+            font-size: 72px;
+            font-weight: 900;
+            margin-bottom: 20px;
+            letter-spacing: -2px;
+            text-shadow: 0 4px 8px rgba(0,0,0,0.3);
+        }
+        
+        .title {
+            font-size: 36px;
+            font-weight: 600;
+            margin-bottom: 30px;
+            opacity: 0.9;
+        }
+        
+        .description {
+            font-size: 24px;
+            font-weight: 400;
+            line-height: 1.4;
+            opacity: 0.8;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        
+        .logo {
+            position: absolute;
+            bottom: 40px;
+            right: 40px;
+            font-size: 18px;
+            font-weight: 700;
+            opacity: 0.7;
+        }
+    </style>
+</head>
+<body>
+    <div class="background-pattern"></div>
+    <div class="container">
+        <h1 class="name">Tarcisio Bispo</h1>
+        <h2 class="title">UX/Product Designer</h2>
+        <p class="description">
+            Especialista em estratégia, impacto e experiência do usuário.<br>
+            Design thinking • Prototipagem • Pesquisa de usuário
+        </p>
+    </div>
+    <div class="logo">tarcisiobispo.github.io/portfolio</div>
+</body>
+</html>

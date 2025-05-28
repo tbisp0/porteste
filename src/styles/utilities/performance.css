@@ -1,0 +1,3 @@
+/* Performance utilities */
+.will-change-transform { will-change: transform; }
+.will-change-opacity { will-change: opacity; }

@@ -1,0 +1,156 @@
+/* ===== ACTION BUTTON STYLES ===== */
+/* Estilos para ActionButton.tsx, IconButton.tsx */
+
+.button-action {
+  /* Dimensions */
+  min-height: var(--button-height-md);
+  padding: var(--button-padding-md);
+  gap: 8px;
+  
+  /* Typography */
+  font-size: 14px;
+  font-weight: 500;
+  
+  /* Appearance */
+  border-radius: var(--button-border-radius);
+  border: 1px solid var(--color-border);
+  background: var(--color-surface);
+  color: var(--color-text);
+  
+  /* Effects */
+  box-shadow: var(--button-shadow);
+  transition: var(--button-transition);
+}
+
+.button-action:hover {
+  background: var(--color-accent);
+  border-color: var(--color-primary);
+  transform: translateY(-1px) scale(1.02);
+  box-shadow: var(--button-shadow-hover);
+}
+
+.button-action:active {
+  transform: translateY(0) scale(0.98);
+  box-shadow: var(--button-shadow-active);
+}
+
+/* Action Button Variants */
+.button-action.variant-primary {
+  background: var(--color-primary);
+  color: white;
+  border-color: var(--color-primary);
+}
+
+.button-action.variant-primary:hover {
+  background: var(--color-primary-dark);
+  border-color: var(--color-primary-dark);
+}
+
+.button-action.variant-ghost {
+  background: transparent;
+  border-color: transparent;
+  box-shadow: none;
+}
+
+.button-action.variant-ghost:hover {
+  background: var(--color-accent);
+  border-color: var(--color-border);
+}
+
+.button-action.variant-outline {
+  background: transparent;
+  color: var(--color-primary);
+  border-color: var(--color-primary);
+}
+
+.button-action.variant-outline:hover {
+  background: var(--color-primary);
+  color: white;
+}
+
+/* Action Button Sizes */
+.button-action.size-sm {
+  min-height: var(--button-height-sm);
+  padding: var(--button-padding-sm);
+  font-size: 12px;
+}
+
+.button-action.size-lg {
+  min-height: var(--button-height-lg);
+  padding: var(--button-padding-lg);
+  font-size: 16px;
+}
+
+/* ===== ICON BUTTON ===== */
+.button-icon {
+  /* Dimensions */
+  width: var(--button-height-md);
+  height: var(--button-height-md);
+  
+  /* Appearance */
+  border-radius: var(--button-border-radius);
+  border: 1px solid var(--color-border);
+  background: var(--color-surface);
+  color: var(--color-text);
+  
+  /* Effects */
+  box-shadow: var(--button-shadow);
+  transition: var(--button-transition);
+}
+
+.button-icon:hover {
+  background: var(--color-accent);
+  border-color: var(--color-primary);
+  transform: scale(1.05);
+  box-shadow: var(--button-shadow-hover);
+}
+
+.button-icon:active {
+  transform: scale(0.95);
+  box-shadow: var(--button-shadow-active);
+}
+
+/* Icon Button Variants */
+.button-icon.variant-primary {
+  background: var(--color-primary);
+  color: white;
+  border-color: var(--color-primary);
+}
+
+.button-icon.variant-primary:hover {
+  background: var(--color-primary-dark);
+  border-color: var(--color-primary-dark);
+}
+
+.button-icon.variant-ghost {
+  background: transparent;
+  border-color: transparent;
+  box-shadow: none;
+}
+
+.button-icon.variant-ghost:hover {
+  background: var(--color-accent);
+  border-color: var(--color-border);
+}
+
+.button-icon.variant-outline {
+  background: transparent;
+  color: var(--color-primary);
+  border-color: var(--color-primary);
+}
+
+.button-icon.variant-outline:hover {
+  background: var(--color-primary);
+  color: white;
+}
+
+/* Icon Button Sizes */
+.button-icon.size-sm {
+  width: var(--button-height-sm);
+  height: var(--button-height-sm);
+}
+
+.button-icon.size-lg {
+  width: var(--button-height-lg);
+  height: var(--button-height-lg);
+}

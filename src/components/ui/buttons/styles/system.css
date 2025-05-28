@@ -1,0 +1,238 @@
+/* ===== SYSTEM BUTTON STYLES ===== */
+/* Estilos para SimpleThemeToggle.tsx, SoundToggle.tsx, LanguageSwitcher.tsx */
+
+/* ===== THEME TOGGLE BUTTON ===== */
+.button-theme-toggle {
+  /* Dimensions */
+  width: 40px;
+  height: 40px;
+  
+  /* Appearance */
+  border-radius: 50%;
+  border: 1px solid var(--color-border);
+  background: var(--color-surface);
+  color: var(--color-primary);
+  
+  /* Effects */
+  box-shadow: var(--button-shadow);
+  transition: var(--button-transition);
+}
+
+.button-theme-toggle:hover {
+  background: var(--color-accent);
+  border-color: var(--color-primary);
+  transform: scale(1.1) rotate(12deg);
+  box-shadow: var(--button-shadow-hover);
+}
+
+.button-theme-toggle:active {
+  transform: scale(0.95);
+  box-shadow: var(--button-shadow-active);
+}
+
+/* Theme Icon Animations */
+.button-theme-toggle .theme-icon {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.button-theme-toggle .sun-icon {
+  transform: rotate(0deg);
+}
+
+.button-theme-toggle .moon-icon {
+  transform: rotate(-30deg);
+}
+
+.button-theme-toggle:hover .sun-icon {
+  transform: rotate(180deg) scale(1.1);
+}
+
+.button-theme-toggle:hover .moon-icon {
+  transform: rotate(30deg) scale(1.1);
+}
+
+/* ===== SOUND TOGGLE BUTTON ===== */
+.button-sound-toggle {
+  /* Dimensions */
+  width: 40px;
+  height: 40px;
+  
+  /* Appearance */
+  border-radius: 50%;
+  border: 1px solid var(--color-border);
+  background: var(--color-surface);
+  color: var(--color-primary);
+  
+  /* Effects */
+  box-shadow: var(--button-shadow);
+  transition: var(--button-transition);
+}
+
+.button-sound-toggle:hover {
+  background: var(--color-accent);
+  border-color: var(--color-primary);
+  transform: scale(1.1);
+  box-shadow: var(--button-shadow-hover);
+}
+
+.button-sound-toggle:active {
+  transform: scale(0.95);
+  box-shadow: var(--button-shadow-active);
+}
+
+/* Sound Icon States */
+.button-sound-toggle[aria-pressed="true"] {
+  background: var(--color-primary);
+  color: white;
+  border-color: var(--color-primary);
+}
+
+.button-sound-toggle[aria-pressed="false"] {
+  background: var(--color-surface);
+  color: var(--color-muted);
+  border-color: var(--color-border);
+}
+
+/* Sound Icon Animations */
+.button-sound-toggle .sound-icon {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.button-sound-toggle:hover .sound-icon {
+  transform: scale(1.1);
+}
+
+/* ===== LANGUAGE SWITCHER ===== */
+.button-language-switcher {
+  /* Dimensions */
+  min-width: 40px;
+  height: 40px;
+  padding: 0 12px;
+  gap: 8px;
+  
+  /* Appearance */
+  border-radius: var(--button-border-radius);
+  border: 1px solid var(--color-border);
+  background: var(--color-surface);
+  color: var(--color-text);
+  
+  /* Typography */
+  font-size: 14px;
+  font-weight: 500;
+  
+  /* Effects */
+  box-shadow: var(--button-shadow);
+  transition: var(--button-transition);
+}
+
+.button-language-switcher:hover {
+  background: var(--color-accent);
+  border-color: var(--color-primary);
+  transform: translateY(-1px);
+  box-shadow: var(--button-shadow-hover);
+}
+
+.button-language-switcher:active {
+  transform: translateY(0);
+  box-shadow: var(--button-shadow-active);
+}
+
+/* Language Dropdown */
+.language-dropdown {
+  position: absolute;
+  top: calc(100% + 8px);
+  right: 0;
+  min-width: 120px;
+  
+  /* Appearance */
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--button-border-radius);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  
+  /* Layout */
+  z-index: 50;
+  overflow: hidden;
+}
+
+.language-option {
+  /* Dimensions */
+  width: 100%;
+  padding: 12px 16px;
+  
+  /* Appearance */
+  background: transparent;
+  border: none;
+  color: var(--color-text);
+  
+  /* Typography */
+  font-size: 14px;
+  font-weight: 400;
+  text-align: left;
+  
+  /* Effects */
+  transition: var(--button-transition-fast);
+  cursor: pointer;
+}
+
+.language-option:hover {
+  background: var(--color-accent);
+  color: var(--color-primary);
+}
+
+.language-option.active {
+  background: var(--color-primary);
+  color: white;
+  font-weight: 500;
+}
+
+/* Globe Icon Animation */
+.button-language-switcher .globe-icon {
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.button-language-switcher:hover .globe-icon {
+  transform: rotate(180deg);
+}
+
+/* ===== RESPONSIVE ADJUSTMENTS ===== */
+@media (max-width: 768px) {
+  .button-theme-toggle,
+  .button-sound-toggle {
+    width: 44px;
+    height: 44px;
+  }
+  
+  .button-language-switcher {
+    min-height: 44px;
+  }
+  
+  .language-dropdown {
+    min-width: 140px;
+  }
+}
+
+/* ===== DARK MODE ===== */
+.dark .button-theme-toggle,
+.dark .button-sound-toggle,
+.dark .button-language-switcher {
+  border-color: var(--color-border);
+  background: var(--color-surface);
+}
+
+.dark .button-theme-toggle:hover,
+.dark .button-sound-toggle:hover,
+.dark .button-language-switcher:hover {
+  background: var(--color-accent);
+  border-color: var(--color-primary);
+}
+
+.dark .language-dropdown {
+  background: var(--color-surface);
+  border-color: var(--color-border);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.dark .language-option:hover {
+  background: var(--color-accent);
+}
