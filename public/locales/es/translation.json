@@ -1,0 +1,481 @@
+{
+  "home": {
+    "title": "Portafolio",
+    "description": "Tarcisio Bispo - Diseñador de Producto y Desarrollador Full-Stack especializado en experiencias digitales accesibles.",
+    "pageTitle": "Tarcisio Bispo | Diseñador UX/Producto",
+    "metaDescription": "Portafolio de Tarcisio Bispo de Araujo - Diseñador UX/Producto enfocado en estrategia, impacto y experiencia.",
+    "ogTitle": "Tarcisio Bispo | Diseñador UX/Producto",
+    "ogDescription": "Portafolio de Tarcisio Bispo de Araujo - Diseñador UX/Producto enfocado en estrategia, impacto y experiencia.",
+    
+    "hero": {
+      "title": "Hola, soy Tarcisio Bispo",
+      "subtitle": "Diseñador de Producto & Desarrollador Full-Stack",
+      "ctaPrimary": "Ver Proyectos",
+      "ctaSecondary": "Contáctame"
+    },
+    
+    "services": {
+      "title": "Cómo puedo ayudarte",
+      "subtitle": "Ofrezco soluciones completas para convertir tus ideas en productos digitales exitosos",
+      
+      "uiux": {
+        "title": "Diseño UI/UX",
+        "description": "Creación de interfaces intuitivas y experiencias de usuario excepcionales que cautivan y convierten."
+      },
+      
+      "development": {
+        "title": "Desarrollo Web",
+        "description": "Soluciones web modernas, rápidas y accesibles con las mejores tecnologías del mercado."
+      },
+      
+      "mobile": {
+        "title": "Mobile First",
+        "description": "Experiencias optimizadas para dispositivos móviles que involucran a los usuarios en cualquier lugar."
+      },
+      
+      "analytics": {
+        "title": "Análisis de Datos",
+        "description": "Toma de decisiones basada en datos para mejorar continuamente los resultados."
+      },
+      
+      "research": {
+        "title": "Investigación de Usuarios",
+        "description": "Comprensión profunda de las necesidades y comportamientos de los usuarios."
+      },
+      
+      "performance": {
+        "title": "Optimización",
+        "description": "Mejora continua del rendimiento y la experiencia del usuario."
+      }
+    },
+    
+    "projects": {
+      "title": "Proyectos Recientes",
+      "subtitle": "Algunos de mis trabajos más recientes y desafiantes",
+      "placeholder": "Imagen del Proyecto",
+      "viewDetails": "Ver detalles",
+      "viewAll": "Ver todos los proyectos",
+      
+      "project1": {
+        "title": "Proyecto 1",
+        "description": "Breve descripción del proyecto y los desafíos enfrentados."
+      },
+      
+      "project2": {
+        "title": "Proyecto 2",
+        "description": "Breve descripción del proyecto y los desafíos enfrentados."
+      },
+      
+      "project3": {
+        "title": "Proyecto 3",
+        "description": "Breve descripción del proyecto y los desafíos enfrentados."
+      }
+    },
+    
+    "contact": {
+      "title": "Trabajemos juntos",
+      "description": "Siempre estoy abierto a discutir nuevos proyectos, ideas creativas u oportunidades para ser parte de tus visiones.",
+      "cta": "Contáctame"
+    },
+    
+    "stats": {
+      "title": "En Números",
+      "subtitle": "Algunas métricas que muestran mi crecimiento e impacto",
+      "items": [
+        {
+          "value": "50+",
+          "label": "Proyectos Completados"
+        },
+        {
+          "value": "30+",
+          "label": "Clientes Satisfechos"
+        },
+        {
+          "value": "5+",
+          "label": "Años de Experiencia"
+        },
+        {
+          "value": "99%",
+          "label": "Tasa de Éxito"
+        }
+      ]
+    },
+    
+    "testimonials": {
+      "title": "Lo que dicen de mí",
+      "subtitle": "Comentarios de clientes y colegas con los que he tenido el placer de trabajar",
+      "items": [
+        {
+          "name": "Juan Pérez",
+          "role": "CEO en Empresa X",
+          "content": "Trabajar con Tarcisio fue una experiencia increíble. Su atención al detalle y habilidades técnicas llevaron nuestros productos digitales a un nuevo nivel.",
+          "avatar": "/assets/images/avatars/avatar-1.jpg"
+        },
+        {
+          "name": "María González",
+          "role": "Gerente de Producto en Empresa Y",
+          "content": "Profesional altamente calificado y comprometido. Las soluciones propuestas superaron nuestras expectativas y trajeron resultados significativos al negocio.",
+          "avatar": "/assets/images/avatars/avatar-2.jpg"
+        },
+        {
+          "name": "Carlos López",
+          "role": "CTO en Empresa Z",
+          "content": "Tarcisio tiene una visión única de UX/UI que combinada con sus habilidades técnicas lo convierten en un profesional excepcional. Recomiendo ampliamente su trabajo.",
+          "avatar": "/assets/images/avatars/avatar-3.jpg"
+        }
+      ]
+    }
+  },
+  
+  "navigation": {
+    "profile": "Perfil",
+    "projects": "Proyectos",
+    "backlog": "Backlog",
+    "contact": "Contacto",
+    "home": "Inicio",
+    "goToProfile": "Ir a la sección de Perfil",
+    "goToProjetos": "Ir a la sección de Proyectos",
+    "goToBacklog": "Ir a la sección de Backlog",
+    "goToContato": "Ir a la sección de Contacto"
+  },
+  "profile": {
+    "name": "Tarcisio Bispo de Araujo",
+    "title": "Diseñador UX/Producto enfocado en estrategia, impacto y experiencia",
+    "bio": "Soy Diseñador UX/Producto con amplia experiencia en el diseño de productos digitales centrados en la experiencia del usuario, conversión e impacto en el negocio. Con experiencia en Marketing Digital, SEO e IA, integro estrategia, diseño y usabilidad en procesos de mejora continua e innovación.",
+    "exploreProjects": "Explorar proyectos",
+    "letsChat": "Hablemos",
+    "downloadCV": "Descargar CV",
+    "linkedin": "LinkedIn",
+    "hero": {
+      "greeting": "Hola, soy",
+      "roles": {
+        "uxDesigner": "Diseñador UX",
+        "productDesigner": "Diseñador de Producto",
+        "designStrategist": "Estratega de Diseño",
+        "interactionDesigner": "Diseñador de Interacción"
+      }
+    }
+  },
+  "projects": {
+    "title": "Proyectos",
+    "description": "Proyectos de Diseño UX/Producto enfocados en estrategia, impacto y experiencia de usuario.",
+    "overview": "Visión General",
+    "discovery": "Descubrimiento",
+    "solution": "Solución",
+    "iteration": "Iteración",
+    "outcomes": "Resultados",
+    "insights": "Conclusiones",
+    "seeMore": "Ver detalles",
+    "seeLess": "Ocultar detalles",
+    "projectImage": "Imagen del proyecto",
+    "badges": {
+      "usability": "Usabilidad",
+      "informationArchitecture": "Arquitectura de la Información",
+      "userTesting": "Pruebas con Usuarios",
+      "uxResearch": "Investigación UX",
+      "journeyMapping": "Mapeo de Viaje",
+      "stakeholderManagement": "Gestión de Partes Interesadas",
+      "productStrategy": "Estrategia de Producto",
+      "seo": "SEO",
+      "productValidation": "Validación de Producto",
+      "visualDesign": "Diseño Visual",
+      "communication": "Comunicación",
+      "engagement": "Compromiso",
+      "design": "Diseño",
+      "strategy": "Estrategia",
+      "research": "Investigación"
+    },
+    "fgvLaw": {
+      "title": "FGV LAW",
+      "category": "Navegación y Usabilidad",
+      "overview": "Reestructuración del área de cursos jurídicos de FGV LAW con foco en usabilidad y organización de la información. El proyecto tuvo como objetivo aumentar la visibilidad de la oferta y facilitar la navegación entre opciones.",
+      "discovery": "Identifiqué que los usuarios tenían dificultad para localizar y comparar cursos. La estructura actual generaba confusión y dispersión. A través de entrevistas y análisis heurístico, noté que el exceso de contenido no ayudaba en la decisión, sino que la entorpecía.",
+      "solution": "Diseñé un nuevo panel con sistema de pestañas y filtros temáticos, reorganizando la jerarquía visual y de información. Las opciones se agruparon según los objetivos de los usuarios (área jurídica, tipo de curso, carga horaria).",
+      "iteration": "Tras pruebas con usuarios, simplificamos la terminología de los filtros y ajustamos el orden de la información según comentarios directos. Mejoré el diseño para una lectura rápida y adaptación móvil.",
+      "outcomes": [
+        "Aumento significativo en la visibilidad e interacción con los cursos",
+        "Mejora en la tasa de conversión de visitas a inscripciones o leads",
+        "Reducción del tiempo de navegación hasta la selección del curso deseado"
+      ],
+      "insights": "La estructura de navegación debe guiar, no solo mostrar. La claridad y agrupación relevante influyen directamente en la percepción de valor de un curso."
+    },
+    "taliparts": {
+      "title": "Taliparts",
+      "category": "UX Estratégico + B2B",
+      "overview": "Proyecto de estructuración y validación digital para Taliparts, enfocado en la publicación de repuestos automotrices en Mercado Libre, con integración a operaciones físicas. El objetivo era aprender rápidamente, a bajo costo, sobre la demanda real, comportamiento del comprador y ventaja competitiva.",
+      "discovery": "Realicé un análisis comparativo detallado con competidores del sector automotriz. Entrevisté a mecánicos y dueños de tiendas, modelé personas y apliqué la Matriz CSD para identificar certezas, suposiciones y dudas en el catálogo físico.",
+      "solution": "Desarrollé un producto mínimo viable (MVP) para catálogo digital y publicación, con validación automatizada de datos e integración con la API de Mercado Libre. Creé una interfaz sencilla para gestión de inventario y seguimiento de ventas.",
+      "iteration": "Con base en datos de ventas iniciales y comentarios de usuarios, ajustamos estrategias de precios y mejoramos las descripciones de productos con especificaciones técnicas que los clientes buscaban.",
+      "outcomes": [
+        "Reducción del 70% en el tiempo de publicación de nuevos ítems",
+        "Aumento del 30% en conversión de ventas en comparación con métodos tradicionales",
+        "Creación de un proceso escalable para expansión del catálogo"
+      ],
+      "insights": "En B2B, el principal desafío suele ser la eficiencia operativa más que solo la interfaz. Comprender el contexto del negocio es tan importante como la experiencia de usuario."
+    }
+  },
+  "backlogs": {
+    "title": "Ciclos de Backlog Estratégico",
+    "subtitle": "Desafíos reales y soluciones de UX aplicadas estratégicamente",
+    "metaDescription": "Ciclos de Backlog Estratégico - Desafíos reales y soluciones de UX aplicadas",
+    
+    "status": {
+      "notStarted": "No Iniciado",
+      "inProgress": "En Progreso",
+      "inReview": "En Revisión",
+      "completed": "Completado"
+    },
+    
+    "priority": {
+      "low": "Baja",
+      "medium": "Media",
+      "high": "Alta"
+    },
+    
+    "category": {
+      "research": "Investigación",
+      "design": "Diseño",
+      "development": "Desarrollo",
+      "optimization": "Optimización"
+    },
+    
+    "details": {
+      "problem": "Problema",
+      "solution": "Solución Propuesta",
+      "expectedImpact": "Impacto Esperado",
+      "keyMetrics": "Métricas Clave",
+      "technologies": "Tecnologías"
+    },
+    
+    "filters": "Filtros",
+    "clearFilters": "Limpiar todos los filtros",
+    "clearAll": "Limpiar todo",
+    "searchPlaceholder": "Buscar en el backlog...",
+    "addedOn": "Agregado el",
+    "targetCompletion": "Objetivo",
+    "viewDetails": "Ver detalles",
+    "noResults": {
+      "title": "No se encontraron elementos",
+      "description": "Intenta ajustar tu búsqueda o filtros para encontrar lo que buscas."
+    },
+    
+    "cta": {
+      "title": "¿Tienes un proyecto en mente?",
+      "description": "Hablemos sobre cómo puedo ayudarte a transformar tus desafíos en soluciones innovadoras.",
+      "button": "Contáctame"
+    },
+    
+    "backlog1": {
+      "title": "Estructuración de Catálogo Digital",
+      "description": "Desafío de organización y publicación de productos en marketplace",
+      "details": {
+        "problem": "Dificultad para organizar y publicar productos de manera eficiente en el marketplace, lo que resulta en baja visibilidad y ventas.",
+        "solution": "Desarrollo de una estructura de catálogo digital intuitiva con categorización inteligente y publicación por lotes.",
+        "impact": [
+          "Aumento del 75% en la velocidad de publicación de productos",
+          "Mejora del 40% en la experiencia del vendedor",
+          "Reducción del 60% en errores de publicación"
+        ],
+        "metrics": [
+          "Tiempo promedio de publicación por ítem",
+          "Tasa de errores en la publicación",
+          "NPS del vendedor"
+        ]
+      }
+    },
+    
+    "backlog2": {
+      "title": "Optimización de Conversión",
+      "description": "Aumento de conversiones en página de producto",
+      "details": {
+        "problem": "Tasa de conversión por debajo del promedio de la industria en la página de producto.",
+        "solution": "Rediseño de la página de producto centrado en CTAs estratégicos, información técnica clara y prueba social.",
+        "impact": [
+          "Aumento del 30% en la tasa de conversión",
+          "Reducción del 20% en la tasa de rebote",
+          "Mejora del 25% en el tiempo de sesión"
+        ],
+        "metrics": [
+          "Tasa de conversión",
+          "Tasa de rebote",
+          "Tiempo promedio en la página"
+        ]
+      }
+    },
+    
+    "backlog3": {
+      "title": "Investigación de Usuarios",
+      "description": "Comprensión de necesidades de clientes B2B",
+      "details": {
+        "problem": "Falta de comprensión profunda sobre las necesidades y puntos de dolor de los clientes B2B.",
+        "solution": "Realización de investigación cualitativa con usuarios B2B para mapear viajes, puntos de dolor y oportunidades de mejora.",
+        "impact": [
+          "Identificación de 5 puntos principales de fricción",
+          "Mapeo de 3 oportunidades de nuevas funciones",
+          "Mejora en la satisfacción del cliente"
+        ],
+        "metrics": [
+          "Número de entrevistas realizadas",
+          "Tasa de participación",
+          "Satisfacción de los participantes"
+        ]
+      }
+    },
+    
+    "backlog4": {
+      "title": "Optimización de Rendimiento",
+      "description": "Mejora de rendimiento de aplicación",
+      "details": {
+        "problem": "Tiempo de carga de la aplicación superior al esperado, impactando la experiencia del usuario.",
+        "solution": "Optimización de código, imágenes y recursos para mejorar el rendimiento general de la aplicación.",
+        "impact": [
+          "Reducción del 50% en el tiempo de carga",
+          "Mejora en Core Web Vitals",
+          "Aumento en la tasa de conversión"
+        ],
+        "metrics": [
+          "Puntuación Lighthouse",
+          "Tiempo hasta interactivo",
+          "LCP, FID, CLS"
+        ]
+      }
+    },
+    
+    "backlog5": {
+      "title": "Sistema de Notificaciones en Tiempo Real",
+      "description": "Implementación de notificaciones push para participación del usuario",
+      "details": {
+        "problem": "Baja participación de usuarios después del primer acceso.",
+        "solution": "Desarrollo de un sistema de notificaciones en tiempo real para mantener a los usuarios comprometidos.",
+        "impact": [
+          "Aumento del 40% en la tasa de retorno de usuarios",
+          "Mejora en la retención de usuarios",
+          "Aumento en las conversiones"
+        ],
+        "metrics": [
+          "Tasa de apertura de notificaciones",
+          "Retención de usuarios",
+          "Tasa de conversión posterior a la notificación"
+        ]
+      }
+    },
+    
+    "backlog6": {
+      "title": "Panel de Análisis",
+      "description": "Panel de métricas y análisis en tiempo real",
+      "details": {
+        "problem": "Dificultad para visualizar y analizar métricas importantes para la toma de decisiones.",
+        "solution": "Desarrollo de un panel interactivo con métricas clave del negocio.",
+        "impact": [
+          "Reducción del 60% en el tiempo de análisis de datos",
+          "Mejora en la toma de decisiones basada en datos",
+          "Identificación más rápida de oportunidades"
+        ],
+        "metrics": [
+          "Tiempo dedicado al análisis de datos",
+          "Número de decisiones basadas en datos",
+          "Satisfacción del usuario"
+        ]
+      }
+    },
+    
+    "backlog7": {
+      "title": "Estructuración de Catálogo Digital",
+      "description": "Desafío de organización y publicación de productos en marketplace",
+      "details": {
+        "problem": "Dificultad para organizar y publicar productos de manera eficiente en el marketplace.",
+        "solution": "Desarrollo de una estructura de catálogo digital intuitiva.",
+        "impact": [
+          "Mayor eficiencia en la publicación",
+          "Mejora en la experiencia del vendedor"
+        ],
+        "metrics": [
+          "Tiempo de publicación",
+          "Satisfacción del vendedor"
+        ]
+      }
+    },
+    
+    "backlog8": {
+      "title": "Optimización de Conversión",
+      "description": "Aumento de conversiones en página de producto",
+      "details": {
+        "problem": "Baja tasa de conversión en la página de producto.",
+        "solution": "Rediseño centrado en mejorar la experiencia del usuario.",
+        "impact": [
+          "Aumento en las conversiones",
+          "Mejora en la experiencia del usuario"
+        ],
+        "metrics": [
+          "Tasa de conversión",
+          "Tasa de rebote"
+        ]
+      }
+    },
+    
+    "solution": "Solución",
+    "discovery": "Descubrimiento",
+    "iteration": "Iteración",
+    "outcomes": "Resultados",
+    "insights": "Conclusiones",
+    "readMore": "Leer más",
+    "seeMore": "Ver detalles",
+    "seeLess": "Ver menos",
+    "result": "Resultado",
+    "note": "Nota",
+    "noItems": "No hay elementos en esta página.",
+    "challenge": "Desafío",
+    "results": "Resultados",
+    "learnings": "Aprendizajes"
+  },
+  "contact": {
+    "title": "Hablemos",
+    "subtitle": "¿Tienes un proyecto en mente o quieres discutir oportunidades? ¡Envíame un mensaje!",
+    "form": {
+      "name": "Tu Nombre",
+      "email": "Tu Correo Electrónico",
+      "subject": "Asunto",
+      "message": "Tu Mensaje",
+      "send": "Enviar Mensaje",
+      "sending": "Enviando...",
+      "success": "¡Mensaje enviado con éxito!",
+      "error": "Error al enviar el mensaje. Por favor, inténtalo de nuevo.",
+      "validation": {
+        "required": "Este campo es obligatorio",
+        "email": "Por favor ingresa un correo electrónico válido"
+      }
+    },
+    "or": "O contáctame directamente en",
+    "social": "Conéctate conmigo en redes sociales"
+  },
+  "accessibility": {
+    "title": "Accesibilidad",
+    "subtitle": "Personaliza tu experiencia de navegación",
+    "description": "Configura las opciones de accesibilidad para mejorar tu experiencia.",
+    "instructions": "Usa las opciones a continuación para personalizar la interfaz.",
+    "contrast": {
+      "label": "Alto Contraste",
+      "description": "Aumenta el contraste de colores para mejor legibilidad"
+    },
+    "fontSize": {
+      "label": "Tamaño de Texto",
+      "small": "Pequeño",
+      "medium": "Mediano",
+      "large": "Grande"
+    },
+    "letterSpacing": {
+      "label": "Espaciado de Letras",
+      "normal": "Normal",
+      "medium": "Medio",
+      "large": "Amplio"
+    },
+    "lineHeight": {
+      "label": "Altura de Línea",
+      "normal": "Normal",
+      "medium": "Medio",
+      "large": "Amplio"
+    },
+    "reset": "Restablecer Valores por Defecto",
+    "close": "Cerrar"
+  }
+}

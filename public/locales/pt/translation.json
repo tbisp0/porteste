@@ -1,0 +1,46 @@
+{
+  "common": {
+    "title": "Tarcísio Bispo",
+    "description": "Desenvolvedor Full Stack especializado em React, Node.js e TypeScript. Construindo soluções modernas e escaláveis."
+  },
+  "home": {
+    "title": "Tarcísio Bispo",
+    "subtitle": "Desenvolvedor Full Stack especializado em React, Node.js e TypeScript. Construindo soluções modernas e escaláveis.",
+    "frontend": "Frontend",
+    "backend": "Backend",
+    "devops": "DevOps",
+    "viewProjects": "Ver Projetos",
+    "getInTouch": "Entrar em Contato"
+  },
+  "projects": {
+    "title": "Projetos Destaques",
+    "subtitle": "Algumas das minhas soluções mais recentes e impactantes",
+    "viewProject": "Ver Projeto",
+    "code": "Código"
+  },
+  "contact": {
+    "title": "Contato",
+    "subtitle": "Entre em contato comigo para discutir oportunidades de trabalho ou projetos interessantes",
+    "form": {
+      "name": "Nome",
+      "namePlaceholder": "Seu nome",
+      "nameError": "Por favor, insira seu nome",
+      "email": "E-mail",
+      "emailPlaceholder": "seu@email.com",
+      "emailError": "Por favor, insira um e-mail válido",
+      "message": "Mensagem",
+      "messagePlaceholder": "Sua mensagem",
+      "messageError": "Por favor, insira uma mensagem",
+      "submit": "Enviar Mensagem"
+    },
+    "info": {
+      "title": "Informações de Contato",
+      "email": "tarcisiobispo@gmail.com",
+      "phone": "+55 (11) 99999-9999",
+      "location": "São Paulo, Brasil"
+    }
+  },
+  "footer": {
+    "copyright": "© 2025 Tarcísio Bispo. Todos os direitos reservados."
+  }
+}

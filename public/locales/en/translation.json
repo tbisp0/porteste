@@ -1,0 +1,481 @@
+{
+  "home": {
+    "title": "Portfolio",
+    "description": "Tarcisio Bispo - Product Designer and Full-Stack Developer specialized in accessible digital experiences.",
+    "pageTitle": "Tarcisio Bispo | UX/Product Designer",
+    "metaDescription": "Portfolio of Tarcisio Bispo de Araujo - UX/Product Designer focused on strategy, impact and experience.",
+    "ogTitle": "Tarcisio Bispo | UX/Product Designer",
+    "ogDescription": "Portfolio of Tarcisio Bispo de Araujo - UX/Product Designer focused on strategy, impact and experience.",
+    
+    "hero": {
+      "title": "Hello, I'm Tarcisio Bispo",
+      "subtitle": "Product Designer & Full-Stack Developer",
+      "ctaPrimary": "View Projects",
+      "ctaSecondary": "Contact Me"
+    },
+    
+    "services": {
+      "title": "How I Can Help You",
+      "subtitle": "I offer complete solutions to turn your ideas into successful digital products",
+      
+      "uiux": {
+        "title": "UI/UX Design",
+        "description": "Creation of intuitive interfaces and exceptional user experiences that delight and convert."
+      },
+      
+      "development": {
+        "title": "Web Development",
+        "description": "Modern, fast and accessible web solutions with the best technologies on the market."
+      },
+      
+      "mobile": {
+        "title": "Mobile First",
+        "description": "Optimized mobile experiences that engage users anywhere."
+      },
+      
+      "analytics": {
+        "title": "Data Analysis",
+        "description": "Data-driven decision making to continuously improve results."
+      },
+      
+      "research": {
+        "title": "User Research",
+        "description": "Deep understanding of user needs and behaviors."
+      },
+      
+      "performance": {
+        "title": "Optimization",
+        "description": "Continuous improvement of performance and user experience."
+      }
+    },
+    
+    "projects": {
+      "title": "Recent Projects",
+      "subtitle": "Some of my most recent and challenging works",
+      "placeholder": "Project Image",
+      "viewDetails": "View details",
+      "viewAll": "View all projects",
+      
+      "project1": {
+        "title": "Project 1",
+        "description": "Brief description of the project and challenges faced."
+      },
+      
+      "project2": {
+        "title": "Project 2",
+        "description": "Brief description of the project and challenges faced."
+      },
+      
+      "project3": {
+        "title": "Project 3",
+        "description": "Brief description of the project and challenges faced."
+      }
+    },
+    
+    "contact": {
+      "title": "Let's work together",
+      "description": "I'm always open to discussing new projects, creative ideas or opportunities to be part of your visions.",
+      "cta": "Contact me"
+    },
+    
+    "stats": {
+      "title": "By The Numbers",
+      "subtitle": "Some metrics that show my growth and impact",
+      "items": [
+        {
+          "value": "50+",
+          "label": "Completed Projects"
+        },
+        {
+          "value": "30+",
+          "label": "Satisfied Clients"
+        },
+        {
+          "value": "5+",
+          "label": "Years of Experience"
+        },
+        {
+          "value": "99%",
+          "label": "Success Rate"
+        }
+      ]
+    },
+    
+    "testimonials": {
+      "title": "What They Say About Me",
+      "subtitle": "Feedback from clients and colleagues I've had the pleasure to work with",
+      "items": [
+        {
+          "name": "John Smith",
+          "role": "CEO at Company X",
+          "content": "Working with Tarcisio was an incredible experience. His attention to detail and technical skills brought our digital products to a new level.",
+          "avatar": "/assets/images/avatars/avatar-1.jpg"
+        },
+        {
+          "name": "Mary Johnson",
+          "role": "Product Manager at Company Y",
+          "content": "Highly qualified and committed professional. The proposed solutions exceeded our expectations and brought significant results to the business.",
+          "avatar": "/assets/images/avatars/avatar-2.jpg"
+        },
+        {
+          "name": "Carlos Rodriguez",
+          "role": "CTO at Company Z",
+          "content": "Tarcisio has a unique vision of UX/UI that combined with his technical skills make him an exceptional professional. I highly recommend his work.",
+          "avatar": "/assets/images/avatars/avatar-3.jpg"
+        }
+      ]
+    }
+  },
+  
+  "navigation": {
+    "profile": "Profile",
+    "projects": "Projects",
+    "backlog": "Backlog",
+    "contact": "Contact",
+    "home": "Home",
+    "goToProfile": "Go to Profile section",
+    "goToProjetos": "Go to Projects section",
+    "goToBacklog": "Go to Backlog section",
+    "goToContato": "Go to Contact section"
+  },
+  "profile": {
+    "name": "Tarcisio Bispo de Araujo",
+    "title": "UX/Product Designer focused on strategy, impact and experience",
+    "bio": "I am a UX/Product Designer with strong experience in designing digital products focused on user experience, conversion and business impact. With a background in Digital Marketing, SEO and AI, I integrate strategy, design and usability into continuous improvement and innovation processes.",
+    "exploreProjects": "Explore projects",
+    "letsChat": "Let's Chat",
+    "downloadCV": "Download CV",
+    "linkedin": "LinkedIn",
+    "hero": {
+      "greeting": "Hello, I'm",
+      "roles": {
+        "uxDesigner": "UX Designer",
+        "productDesigner": "Product Designer",
+        "designStrategist": "Design Strategist",
+        "interactionDesigner": "Interaction Designer"
+      }
+    }
+  },
+  "projects": {
+    "title": "Projects",
+    "description": "UX/Product Design projects focused on strategy, impact and user experience.",
+    "overview": "Overview",
+    "discovery": "Discovery",
+    "solution": "Solution",
+    "iteration": "Iteration",
+    "outcomes": "Outcomes",
+    "insights": "Insights",
+    "seeMore": "See details",
+    "seeLess": "Hide details",
+    "projectImage": "Project image",
+    "badges": {
+      "usability": "Usability",
+      "informationArchitecture": "Information Architecture",
+      "userTesting": "User Testing",
+      "uxResearch": "UX Research",
+      "journeyMapping": "Journey Mapping",
+      "stakeholderManagement": "Stakeholder Management",
+      "productStrategy": "Product Strategy",
+      "seo": "SEO",
+      "productValidation": "Product Validation",
+      "visualDesign": "Visual Design",
+      "communication": "Communication",
+      "engagement": "Engagement",
+      "design": "Design",
+      "strategy": "Strategy",
+      "research": "Research"
+    },
+    "fgvLaw": {
+      "title": "FGV LAW",
+      "category": "Navigation and Usability",
+      "overview": "Restructuring of FGV LAW's legal courses area focusing on usability and information organization. The project aimed to increase the visibility of offerings and facilitate navigation between options.",
+      "discovery": "I identified that users had difficulty locating and comparing courses. The current structure caused confusion and dispersion. Through interviews and heuristic analysis, I realized that the excess of content was not helping in the decision, but rather hindering it.",
+      "solution": "I designed a new panel with a tab system and thematic filters, reorganizing the visual and informational hierarchy. The options were grouped based on user objectives (legal area, course type, workload).",
+      "iteration": "After user testing, we simplified filter terminology and adjusted the order of information based on direct feedback. I refined the layout for quick reading and mobile adaptation.",
+      "outcomes": [
+        "Significant increase in visibility and interaction with courses",
+        "Improvement in conversion rate from visits to enrollments or leads",
+        "Reduction in navigation time to the desired course selection"
+      ],
+      "insights": "Navigation structure needs to guide, not just show. Clarity and relevant grouping directly influence the perceived value of a course."
+    },
+    "taliparts": {
+      "title": "Taliparts",
+      "category": "Strategic UX + B2B",
+      "overview": "Structuring and digital validation project for Taliparts, focused on publishing auto parts on Mercado Livre, with integration to physical operations. The goal was to learn quickly, at low cost, about real demand, buyer behavior and competitive advantage.",
+      "discovery": "I conducted a detailed benchmark with automotive competitors. I interviewed mechanics and store owners, modeled personas and applied the CSD Matrix to identify certainties, assumptions and doubts in the physical catalog.",
+      "solution": "I developed a minimum viable product (MVP) for digital cataloging and publishing, with automated data validation and integration with Mercado Livre's API. Created a simple interface for inventory management and sales tracking.",
+      "iteration": "Based on initial sales data and user feedback, we adjusted pricing strategies and improved product descriptions with technical specifications that customers were looking for.",
+      "outcomes": [
+        "70% reduction in time to publish new items",
+        "30% increase in sales conversion compared to traditional methods",
+        "Creation of a scalable process for catalog expansion"
+      ],
+      "insights": "In B2B, the main challenge is often operational efficiency rather than just the interface. Understanding the business context is as important as the user experience."
+    }
+  },
+  "backlogs": {
+    "title": "Strategic Backlog Cycles",
+    "subtitle": "Real challenges and strategically applied UX solutions",
+    "metaDescription": "Strategic Backlog Cycles - Real challenges and UX solutions",
+    
+    "status": {
+      "notStarted": "Not Started",
+      "inProgress": "In Progress",
+      "inReview": "In Review",
+      "completed": "Completed"
+    },
+    
+    "priority": {
+      "low": "Low",
+      "medium": "Medium",
+      "high": "High"
+    },
+    
+    "category": {
+      "research": "Research",
+      "design": "Design",
+      "development": "Development",
+      "optimization": "Optimization"
+    },
+    
+    "details": {
+      "problem": "Problem",
+      "solution": "Proposed Solution",
+      "expectedImpact": "Expected Impact",
+      "keyMetrics": "Key Metrics",
+      "technologies": "Technologies"
+    },
+    
+    "filters": "Filters",
+    "clearFilters": "Clear all filters",
+    "clearAll": "Clear all",
+    "searchPlaceholder": "Search backlogs...",
+    "addedOn": "Added on",
+    "targetCompletion": "Target",
+    "viewDetails": "View details",
+    "noResults": {
+      "title": "No backlogs found",
+      "description": "Try adjusting your search or filters to find what you're looking for."
+    },
+    
+    "cta": {
+      "title": "Have a project in mind?",
+      "description": "Let's talk about how I can help transform your challenges into innovative solutions.",
+      "button": "Contact me"
+    },
+    
+    "backlog1": {
+      "title": "Digital Catalog Structure",
+      "description": "Challenge of organizing and publishing products on marketplace",
+      "details": {
+        "problem": "Difficulty in efficiently organizing and publishing products on the marketplace, resulting in low visibility and sales.",
+        "solution": "Development of an intuitive digital catalog structure with smart categorization and batch publishing.",
+        "impact": [
+          "75% increase in product publishing speed",
+          "40% improvement in seller experience",
+          "60% reduction in publishing errors"
+        ],
+        "metrics": [
+          "Average publishing time per item",
+          "Publishing error rate",
+          "Seller NPS"
+        ]
+      }
+    },
+    
+    "backlog2": {
+      "title": "Conversion Optimization",
+      "description": "Increasing conversions on product page",
+      "details": {
+        "problem": "Conversion rate below industry average on the product page.",
+        "solution": "Redesign of the product page focusing on strategic CTAs, clear technical information, and social proof.",
+        "impact": [
+          "30% increase in conversion rate",
+          "20% reduction in bounce rate",
+          "25% improvement in session duration"
+        ],
+        "metrics": [
+          "Conversion rate",
+          "Bounce rate",
+          "Average time on page"
+        ]
+      }
+    },
+    
+    "backlog3": {
+      "title": "User Research",
+      "description": "Understanding B2B client needs",
+      "details": {
+        "problem": "Lack of in-depth understanding about B2B clients' needs and pain points.",
+        "solution": "Conducting qualitative research with B2B users to map journeys, pain points, and improvement opportunities.",
+        "impact": [
+          "Identification of 5 main friction points",
+          "Mapping of 3 new feature opportunities",
+          "Improvement in client satisfaction"
+        ],
+        "metrics": [
+          "Number of interviews conducted",
+          "Participation rate",
+          "Participant satisfaction"
+        ]
+      }
+    },
+    
+    "backlog4": {
+      "title": "Performance Optimization",
+      "description": "Application performance improvement",
+      "details": {
+        "problem": "Application loading time higher than expected, impacting user experience.",
+        "solution": "Code, images, and resources optimization to improve overall application performance.",
+        "impact": [
+          "50% reduction in loading time",
+          "Improvement in Core Web Vitals",
+          "Increase in conversion rate"
+        ],
+        "metrics": [
+          "Lighthouse Score",
+          "Time to Interactive",
+                          "LCP, FID, CLS"
+        ]
+      }
+    },
+    
+    "backlog5": {
+      "title": "Real-time Notification System",
+      "description": "Push notifications implementation for user engagement",
+      "details": {
+        "problem": "Low user engagement after first access.",
+        "solution": "Development of a real-time notification system to keep users engaged.",
+        "impact": [
+          "40% increase in user return rate",
+          "Improvement in user retention",
+          "Increase in conversions"
+        ],
+        "metrics": [
+          "Notification open rate",
+          "User retention",
+          "Post-notification conversion rate"
+        ]
+      }
+    },
+    
+    "backlog6": {
+      "title": "Analytics Dashboard",
+      "description": "Real-time metrics and analysis panel",
+      "details": {
+        "problem": "Difficulty in visualizing and analyzing important metrics for decision making.",
+        "solution": "Development of an interactive dashboard with key business metrics.",
+        "impact": [
+          "60% reduction in data analysis time",
+          "Improvement in data-driven decision making",
+          "Faster opportunity identification"
+        ],
+        "metrics": [
+          "Time spent on data analysis",
+          "Number of data-driven decisions",
+          "User satisfaction"
+        ]
+      }
+    },
+    
+    "backlog7": {
+      "title": "Digital Catalog Structure",
+      "description": "Challenge of organizing and publishing products on marketplace",
+      "details": {
+        "problem": "Difficulty in efficiently organizing and publishing products on the marketplace.",
+        "solution": "Development of an intuitive digital catalog structure.",
+        "impact": [
+          "Increased publishing efficiency",
+          "Improved seller experience"
+        ],
+        "metrics": [
+          "Publishing time",
+          "Seller satisfaction"
+        ]
+      }
+    },
+    
+    "backlog8": {
+      "title": "Conversion Optimization",
+      "description": "Increasing conversions on product page",
+      "details": {
+        "problem": "Low conversion rate on the product page.",
+        "solution": "Redesign focused on improving user experience.",
+        "impact": [
+          "Increase in conversions",
+          "Improved user experience"
+        ],
+        "metrics": [
+          "Conversion rate",
+          "Bounce rate"
+        ]
+      }
+    },
+    
+    "solution": "Solution",
+    "discovery": "Discovery",
+    "iteration": "Iteration",
+    "outcomes": "Outcomes",
+    "insights": "Insights",
+    "readMore": "Read more",
+    "seeMore": "See details",
+    "seeLess": "See less",
+    "result": "Result",
+    "note": "Note",
+    "noItems": "No items on this page.",
+    "challenge": "Challenge",
+    "results": "Results",
+    "learnings": "Learnings"
+  },
+  "contact": {
+    "title": "Let's Talk",
+    "subtitle": "Have a project in mind or want to discuss opportunities? Send me a message!",
+    "form": {
+      "name": "Your Name",
+      "email": "Your Email",
+      "subject": "Subject",
+      "message": "Your Message",
+      "send": "Send Message",
+      "sending": "Sending...",
+      "success": "Message sent successfully!",
+      "error": "Error sending message. Please try again.",
+      "validation": {
+        "required": "This field is required",
+        "email": "Please enter a valid email"
+      }
+    },
+    "or": "Or contact me directly at",
+    "social": "Connect with me on social media"
+  },
+  "accessibility": {
+    "title": "Accessibility",
+    "subtitle": "Customize your browsing experience",
+    "description": "Configure accessibility options to enhance your experience.",
+    "instructions": "Use the options below to customize the interface.",
+    "contrast": {
+      "label": "High Contrast",
+      "description": "Increases color contrast for better readability"
+    },
+    "fontSize": {
+      "label": "Text Size",
+      "small": "Small",
+      "medium": "Medium",
+      "large": "Large"
+    },
+    "letterSpacing": {
+      "label": "Letter Spacing",
+      "normal": "Normal",
+      "medium": "Medium",
+      "large": "Large"
+    },
+    "lineHeight": {
+      "label": "Line Height",
+      "normal": "Normal",
+      "medium": "Medium",
+      "large": "Large"
+    },
+    "reset": "Reset to Defaults",
+    "close": "Close"
+  }
+}

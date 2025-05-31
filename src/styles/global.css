@@ -1,0 +1,368 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Base colors */
+    --color-primary: 33 150 243;
+    --color-primary-foreground: 255 255 255;
+    
+    --color-secondary: 156 39 176;
+    --color-secondary-foreground: 255 255 255;
+    
+    --color-accent: 255 193 7;
+    --color-accent-foreground: 0 0 0;
+    
+    /* Semantic colors */
+    --color-background: 255 255 255;
+    --color-foreground: 33 33 33;
+    
+    --color-card: 250 250 250;
+    --color-card-foreground: 33 33 33;
+    
+    --color-muted: 245 245 245;
+    --color-muted-foreground: 115 115 115;
+    
+    --color-border: 229 231 235;
+    
+    /* Feedback colors */
+    --color-success: 76 175 80;
+    --color-success-foreground: 255 255 255;
+    
+    --color-warning: 255 152 0;
+    --color-warning-foreground: 0 0 0;
+    
+    --color-error: 244 67 54;
+    --color-error-foreground: 255 255 255;
+    
+    --color-info: 3 169 244;
+    --color-info-foreground: 255 255 255;
+    
+    /* UI elements */
+    --radius-sm: 0.125rem;
+    --radius-md: 0.25rem;
+    --radius-lg: 0.5rem;
+    --radius-xl: 1rem;
+    --radius-full: 9999px;
+  }
+
+  .dark {
+    /* Dark mode colors */
+    --color-primary: 33 150 243;
+    --color-primary-foreground: 255 255 255;
+    
+    --color-secondary: 186 104 200;
+    --color-secondary-foreground: 255 255 255;
+    
+    --color-accent: 255 213 79;
+    --color-accent-foreground: 0 0 0;
+    
+    /* Semantic colors */
+    --color-background: 18 18 18;
+    --color-foreground: 250 250 250;
+    
+    --color-card: 37 37 37;
+    --color-card-foreground: 250 250 250;
+    
+    --color-muted: 45 45 45;
+    --color-muted-foreground: 163 163 163;
+    
+    --color-border: 64 64 64;
+    
+    /* Feedback colors */
+    --color-success: 102 187 106;
+    --color-warning: 255 167 38;
+    --color-error: 239 83 80;
+    --color-info: 41 182 246;
+  }
+  
+  /* High contrast mode */
+  .high-contrast {
+    --color-primary: 0 0 255;
+    --color-primary-foreground: 255 255 255;
+    
+    --color-secondary: 218 0 255;
+    --color-secondary-foreground: 255 255 255;
+    
+    --color-accent: 255 255 0;
+    --color-accent-foreground: 0 0 0;
+    
+    --color-background: 0 0 0;
+    --color-foreground: 255 255 255;
+    
+    --color-muted: 28 28 28;
+    --color-muted-foreground: 225 225 225;
+    
+    --color-border: 255 255 255;
+  }
+  
+  /* Font size adjustments */
+  :root[data-fontSize="small"] {
+    font-size: 14px;
+  }
+  
+  :root[data-fontSize="medium"] {
+    font-size: 16px;
+  }
+  
+  :root[data-fontSize="large"] {
+    font-size: 18px;
+  }
+  
+  /* Base styles */
+  body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background-color: rgb(var(--color-background));
+    color: rgb(var(--color-foreground));
+    transition: background-color 0.3s ease, color 0.3s ease;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  /* Improved focus styles for accessibility */
+  *:focus-visible {
+    outline: 2px solid rgb(var(--color-primary));
+    outline-offset: 2px;
+  }
+  
+  /* Reset links */
+  a {
+    color: rgb(var(--color-primary));
+    text-decoration: none;
+    transition: color 0.2s ease, text-decoration 0.2s ease;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Heading styles */
+  h1, h2, h3, h4, h5, h6 {
+    margin-top: 0;
+    font-weight: 700;
+    line-height: 1.2;
+  }
+}
+
+@layer components {
+  /* Button styles */
+  .btn {
+    @apply inline-flex items-center justify-center rounded-md px-4 py-2 text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:opacity-50 disabled:pointer-events-none;
+  }
+  
+  .btn-primary {
+    @apply bg-primary text-primary-foreground hover:bg-primary/90;
+  }
+  
+  .btn-secondary {
+    @apply bg-secondary text-secondary-foreground hover:bg-secondary/90;
+  }
+  
+  .btn-accent {
+    @apply bg-accent text-accent-foreground hover:bg-accent/90;
+  }
+  
+  .btn-ghost {
+    @apply bg-transparent text-foreground hover:bg-muted;
+  }
+  
+  .btn-link {
+    @apply bg-transparent text-primary underline-offset-4 hover:underline;
+  }
+  
+  /* Card styles */
+  .card {
+    @apply rounded-lg border border-border bg-card text-card-foreground shadow-sm overflow-hidden;
+  }
+  
+  .card-header {
+    @apply flex flex-col space-y-1.5 p-6 pb-0;
+  }
+  
+  .card-title {
+    @apply text-xl font-semibold leading-none tracking-tight;
+  }
+  
+  .card-description {
+    @apply text-sm text-muted-foreground;
+  }
+  
+  .card-content {
+    @apply p-6;
+  }
+  
+  .card-footer {
+    @apply flex items-center p-6 pt-0;
+  }
+  
+  /* Form controls */
+  .input {
+    @apply flex h-10 w-full rounded-md border border-border bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50;
+  }
+  
+  .textarea {
+    @apply flex min-h-[80px] w-full rounded-md border border-border bg-background px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50;
+  }
+  
+  .label {
+    @apply text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70;
+  }
+  
+  .select {
+    @apply flex h-10 w-full items-center justify-between rounded-md border border-border bg-background px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50;
+  }
+}
+
+@layer utilities {
+  /* Animation utilities */
+  .animate-in {
+    animation-duration: 0.3s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: both;
+  }
+  
+  .fade-in {
+    animation-name: fadeIn;
+  }
+  
+  .slide-in-from-top {
+    animation-name: slideInFromTop;
+  }
+  
+  .slide-in-from-bottom {
+    animation-name: slideInFromBottom;
+  }
+  
+  .slide-in-from-left {
+    animation-name: slideInFromLeft;
+  }
+  
+  .slide-in-from-right {
+    animation-name: slideInFromRight;
+  }
+  
+  /* Reduced motion preferences */
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+  
+  .reduce-motion * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+  
+  /* Visibility utilities */
+  .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+  }
+  
+  /* Responsive utilities */
+  .container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  
+  @media (min-width: 640px) {
+    .container {
+      max-width: 640px;
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .container {
+      max-width: 768px;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .container {
+      max-width: 1024px;
+    }
+  }
+  
+  @media (min-width: 1280px) {
+    .container {
+      max-width: 1280px;
+    }
+  }
+  
+  @media (min-width: 1536px) {
+    .container {
+      max-width: 1536px;
+    }
+  }
+}
+
+/* Keyframes */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideInFromTop {
+  from {
+    transform: translateY(-1rem);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInFromBottom {
+  from {
+    transform: translateY(1rem);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInFromLeft {
+  from {
+    transform: translateX(-1rem);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInFromRight {
+  from {
+    transform: translateX(1rem);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}

@@ -1,138 +1,64 @@
-import * as React from 'react';
-import { Suspense } from 'react';
-import { Toaster } from "@/components/ui/toaster";
-import { Toaster as Sonner } from "@/components/ui/sonner";
-import { TooltipProvider } from "@/components/ui/tooltip";
-import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { HelmetProvider } from 'react-helmet-async';
-import { useTranslation } from 'react-i18next';
+import React, { useState, useEffect, Suspense } from 'react';
+import { Routes, Route, useLocation } from 'react-router-dom';
+import { Toaster } from 'sonner';
+import { I18nextProvider } from 'react-i18next';
+import i18n from './lib/i18n';
+import { ThemeProvider } from './app/providers/ThemeContext';
+import { AudioProvider } from './app/providers/AudioContext';
+import { SettingsProvider } from './app/providers/SettingsContext';
+import { ToastProvider } from './app/providers/ToastContext';
+import { Header } from './app/layout/Header';
+import { Footer } from './app/layout/Footer';
+import LoadingFallback from './components/common/LoadingFallback';
+import HomePage from './pages/Home';
+import NotFoundPage from './pages/NotFound';
 
-import LoadingSpinner from "@/components/LoadingSpinner";
-import I18nProvider from "@/components/I18nProvider";
+// Lazy-loaded pages for improved performance
+const ProjectsPage = React.lazy(() => import('./pages/Projects'));
+const ContactPage = React.lazy(() => import('./pages/Contact'));
+const PrivacyPolicyPage = React.lazy(() => import('./pages/PrivacyPolicy'));
+const BacklogsPage = React.lazy(() => import('./pages/Backlogs'));
 
-// Critical components loaded immediately
-import Header from "@/components/Header";
+// Analytics
+import { trackPageView } from './utils/analytics';
 
-// Lazy loading dos componentes de página para code splitting
-const Index = React.lazy(() => import("./pages/Index"));
-const NotFound = React.lazy(() => import("./pages/NotFound"));
-const PrivacyPolicy = React.lazy(() => import("./pages/PrivacyPolicy"));
+function App() {
+  const location = useLocation();
 
-// Lazy loading de componentes pesados para reduzir bundle inicial
-const AnalyticsProvider = React.lazy(() => import("@/components/analytics/AnalyticsProvider"));
-const BackToTop = React.lazy(() => import("@/components/ui/BackToTop"));
-const FluidGradientBackground = React.lazy(() => import("@/components/FluidGradientBackground").then(module => ({ default: module.default })));
-const GradientSectionIndicator = React.lazy(() => import("@/components/FluidGradientBackground").then(module => ({ default: module.GradientSectionIndicator })));
-const FluidGradientDemo = React.lazy(() => import("@/components/examples/FluidGradientDemo"));
-
-const SoundDemo = React.lazy(() => import("@/components/ui/SoundDemo"));
-const LazyScripts = React.lazy(() => import("@/components/LazyScripts"));
-const CookieConsent = React.lazy(() => import("@/components/CookieConsent"));
-const TranslationDebug = React.lazy(() => import("@/components/debug/TranslationDebug"));
-
-const queryClient = new QueryClient();
-
-const App = () => {
-  const { t } = useTranslation();
+  // Track page views
+  useEffect(() => {
+    trackPageView(location.pathname);
+  }, [location]);
 
   return (
-    <HelmetProvider>
-      <QueryClientProvider client={queryClient}>
-        <I18nProvider>
-          <TooltipProvider>
-          <Suspense fallback={<div className="min-h-screen flex items-center justify-center"><LoadingSpinner /></div>}>
-            <AnalyticsProvider>
-
-            {/* Skip Links para Navegação por Teclado */}
-            <a href="#main-content" className="skip-link">
-              {t('accessibility.features.skipToContent')}
-            </a>
-            <a href="#navigation" className="skip-link">
-              {t('accessibility.features.skipToNavigation')}
-            </a>
-
-            <Toaster />
-            <Sonner />
-
-
-
-            {/* Sistema de Gradientes Fluidos */}
-            <Suspense fallback={null}>
-              <FluidGradientBackground />
-            </Suspense>
-
-            {/* Indicador de Seção (apenas em desenvolvimento) */}
-            {import.meta.env.DEV && (
-              <Suspense fallback={null}>
-                <GradientSectionIndicator />
-              </Suspense>
-            )}
-            {import.meta.env.DEV && (
-              <Suspense fallback={null}>
-                <FluidGradientDemo />
-              </Suspense>
-            )}
-
-            {/* Sound Demo - apenas em desenvolvimento */}
-            {import.meta.env.DEV && (
-              <div className="fixed bottom-4 right-4 z-50">
-                <Suspense fallback={null}>
-                  <SoundDemo />
-                </Suspense>
+    <I18nextProvider i18n={i18n}>
+      <ThemeProvider>
+        <AudioProvider>
+          <SettingsProvider>
+            <ToastProvider>
+              <div className="flex flex-col min-h-screen bg-background text-foreground transition-colors duration-300">
+                <Header />
+                <main className="flex-grow">
+                  <Suspense fallback={<LoadingFallback />}>
+                    <Routes>
+                      <Route path="/" element={<HomePage />} />
+                      <Route path="/projetos" element={<ProjectsPage />} />
+                      <Route path="/backlogs" element={<BacklogsPage />} />
+                      <Route path="/contato" element={<ContactPage />} />
+                      <Route path="/politica-de-privacidade" element={<PrivacyPolicyPage />} />
+                      <Route path="*" element={<NotFoundPage />} />
+                    </Routes>
+                  </Suspense>
+                </main>
+                <Footer />
               </div>
-            )}
-
-            {/* UX Premium Components */}
-            <Suspense fallback={null}>
-              <BackToTop />
-            </Suspense>
-
-            {/* Lazy load third-party scripts */}
-            <Suspense fallback={null}>
-              <LazyScripts delay={2000} />
-            </Suspense>
-
-            {/* Cookie Consent Banner */}
-            <Suspense fallback={null}>
-              <CookieConsent />
-            </Suspense>
-
-            {/* Translation Debug - apenas em desenvolvimento */}
-            {import.meta.env.DEV && (
-              <Suspense fallback={null}>
-                <TranslationDebug />
-              </Suspense>
-            )}
-
-          <Header />
-          <BrowserRouter
-            basename="/portfolio"
-            future={{
-              v7_startTransition: true,
-              v7_relativeSplatPath: true
-            }}
-          >
-            <Suspense fallback={
-              <div className="min-h-screen flex items-center justify-center">
-                <LoadingSpinner />
-              </div>
-            }>
-              <Routes>
-                <Route path="/" element={<Index />} />
-                <Route path="/privacy-policy" element={<PrivacyPolicy />} />
-                {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
-                <Route path="*" element={<NotFound />} />
-              </Routes>
-            </Suspense>
-          </BrowserRouter>
-          </AnalyticsProvider>
-          </Suspense>
-        </TooltipProvider>
-        </I18nProvider>
-      </QueryClientProvider>
-    </HelmetProvider>
+              <Toaster position="top-right" />
+            </ToastProvider>
+          </SettingsProvider>
+        </AudioProvider>
+      </ThemeProvider>
+    </I18nextProvider>
   );
-};
+}
 
 export default App;
